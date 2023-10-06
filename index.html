@@ -21,7 +21,7 @@
             };
 
             try {
-                const response = await fetch(`https://fahriwps.up.railway.app/api/v1/data/`, {
+                const response = await fetch(`https://fahriwps.up.railway.app/api/v1/datax/`, {
                     method: "GET",
                     headers
                 });
@@ -55,7 +55,7 @@
             const userInput = document.getElementById("jsonInput").value;
 
             try {
-                const response = await fetch(`https://fahriwps.up.railway.app/api/v1/data/`, {
+                const response = await fetch(`https://fahriwps.up.railway.app/api/v1/datax/`, {
                     method: "POST",
                     headers,    
                     body: userInput
@@ -83,7 +83,7 @@
             const dataId = prompt("Enter the ID of the data to delete:");
 
             try {
-                const response = await fetch(`https://fahriwps.up.railway.app/api/v1/data/${dataId}`, {
+                const response = await fetch(`https://fahriwps.up.railway.app/api/v1/datax/${dataId}`, {
                     method: "DELETE",
                     headers
                 });
